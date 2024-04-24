@@ -1,4 +1,21 @@
 // Your code here 
+class Dog {
+	constructor(name) {
+		this.name = name;
+	}
+
+	static makeJet = () => {
+		return new Dog('Jet');
+	}
+
+	changeName = (newName) => {
+		return this.name = newName;
+	}
+
+	speak = (word) => {
+		return `${this.name} says ${word}`;
+	}
+}
 
 
 /*****************************************************************************/
